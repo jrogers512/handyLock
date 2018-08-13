@@ -661,7 +661,6 @@
                 <outlet property="aboutVersionTextField" destination="qry-D9-wVj" id="Me0-m2-lFh"/>
                 <outlet property="appWindow" destination="fD4-cJ-pGz" id="dES-HT-8W7"/>
                 <outlet property="btPollFrequency" destination="4rp-KO-BQC" id="OgC-En-bjk"/>
-                <outlet property="checkUpdatesOnStartup" destination="pif-kz-4BD" id="qUF-7L-14P"/>
                 <outlet property="delayBeforeLocking" destination="gcI-ut-7mb" id="QCj-jb-7NK"/>
                 <outlet property="deviceDistance" destination="isQ-Ss-xtf" id="FSy-eW-2sR"/>
                 <outlet property="deviceName" destination="lT9-Ih-DP3" id="As4-ub-Bp5"/>
@@ -1153,17 +1152,6 @@
                                                                 <connections>
                                                                     <action selector="startAtLoginTriggered:" target="494" id="wLw-XZ-NbP"/>
                                                                     <binding destination="OjQ-uP-NFb" name="value" keyPath="values.startAtLogin" id="YfL-hm-vQ8"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button id="pif-kz-4BD">
-                                                                <rect key="frame" x="15" y="124" width="207" height="18"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <buttonCell key="cell" type="check" title="Check for updates on startup" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gSX-C1-kDp">
-                                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                                    <font key="font" metaFont="system"/>
-                                                                </buttonCell>
-                                                                <connections>
-                                                                    <binding destination="OjQ-uP-NFb" name="value" keyPath="values.updating" id="9vs-Nt-seo"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
