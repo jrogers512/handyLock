@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A226f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8164.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -649,6 +650,7 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="405" y="231"/>
         </menu>
         <customObject id="494" customClass="AppDelegate">
             <connections>
@@ -696,7 +698,6 @@
                     <tabView id="zPP-ex-tOE">
                         <rect key="frame" x="13" y="39" width="616" height="269"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="Device Config" identifier="2" id="v5i-xV-RYh">
@@ -704,14 +705,14 @@
                                     <rect key="frame" x="10" y="33" width="596" height="223"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <box autoresizesSubviews="NO" title="Bluetooth Device" borderType="line" id="WzU-Qg-EVT">
+                                        <box autoresizesSubviews="NO" borderType="line" title="Bluetooth Device" id="WzU-Qg-EVT">
                                             <rect key="frame" x="6" y="114" width="584" height="109"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <view key="contentView" id="tz4-Sh-ZGy">
                                                 <rect key="frame" x="1" y="1" width="582" height="93"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <box autoresizesSubviews="NO" title="Box" borderType="line" titlePosition="noTitle" id="yhB-Lj-jxp">
+                                                    <box autoresizesSubviews="NO" borderType="line" title="Box" titlePosition="noTitle" id="yhB-Lj-jxp">
                                                         <rect key="frame" x="15" y="41" width="552" height="44"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <view key="contentView" id="JYz-93-Lpa">
@@ -721,7 +722,6 @@
                                                                 <textField verticalHuggingPriority="750" id="lT9-Ih-DP3">
                                                                     <rect key="frame" x="15" y="14" width="388" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <animations/>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select the desired Bluetooth device for proximity lock" id="hd8-ss-WkB">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -731,19 +731,13 @@
                                                                 <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" minValue="16" maxValue="100" doubleValue="16" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="xmk-a2-jYy">
                                                                     <rect key="frame" x="516" y="14" width="16" height="16"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <animations/>
                                                                 </progressIndicator>
                                                             </subviews>
-                                                            <animations/>
                                                         </view>
-                                                        <animations/>
-                                                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </box>
                                                     <button verticalHuggingPriority="750" id="iaI-Og-uov">
                                                         <rect key="frame" x="12" y="7" width="77" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HSd-Bx-FRk">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" metaFont="system"/>
@@ -755,7 +749,6 @@
                                                     <button verticalHuggingPriority="750" id="V4C-Lg-LEk">
                                                         <rect key="frame" x="480" y="7" width="90" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cGZ-P9-6Pr">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" metaFont="system"/>
@@ -765,13 +758,9 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <animations/>
                                             </view>
-                                            <animations/>
-                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </box>
-                                        <box autoresizesSubviews="NO" title="Security" borderType="line" id="TEu-pw-n3D">
+                                        <box autoresizesSubviews="NO" borderType="line" title="Security" id="TEu-pw-n3D">
                                             <rect key="frame" x="6" y="49" width="584" height="61"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <view key="contentView" id="Llo-An-lDA">
@@ -781,7 +770,6 @@
                                                     <button verticalHuggingPriority="750" id="V1z-iG-JZK">
                                                         <rect key="frame" x="229" y="7" width="125" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <buttonCell key="cell" type="push" title="Set password" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jss-YG-Eky">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" metaFont="system"/>
@@ -791,14 +779,9 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <animations/>
                                             </view>
-                                            <animations/>
-                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </box>
                                     </subviews>
-                                    <animations/>
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="Signal" identifier="" id="a88-BC-vmg">
@@ -806,7 +789,7 @@
                                     <rect key="frame" x="10" y="33" width="596" height="223"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <box autoresizesSubviews="NO" title="Bluetooth Signal Info" borderType="line" id="7fm-06-bWW">
+                                        <box autoresizesSubviews="NO" borderType="line" title="Bluetooth Signal Info" id="7fm-06-bWW">
                                             <rect key="frame" x="6" y="91" width="584" height="132"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <view key="contentView" id="4O0-sV-Npm">
@@ -816,7 +799,6 @@
                                                     <textField verticalHuggingPriority="750" id="t3e-gb-OSs">
                                                         <rect key="frame" x="47" y="39" width="139" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Averaged signal level:" id="9JN-Il-xc3">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -826,13 +808,11 @@
                                                     <levelIndicator verticalHuggingPriority="750" id="g2a-gR-hyu">
                                                         <rect key="frame" x="284" y="39" width="280" height="16"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <levelIndicatorCell key="cell" alignment="left" minValue="-127" warningValue="-50" criticalValue="-80" levelIndicatorStyle="continuousCapacity" id="WL6-za-Zsb"/>
                                                     </levelIndicator>
                                                     <textField verticalHuggingPriority="750" id="UZi-NF-z2Q">
                                                         <rect key="frame" x="190" y="39" width="53" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="-45" id="1w0-MH-Ix5">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -842,7 +822,6 @@
                                                     <textField verticalHuggingPriority="750" id="1oB-uz-fyA">
                                                         <rect key="frame" x="190" y="64" width="53" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0" id="6q9-at-xRl">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -852,7 +831,6 @@
                                                     <textField verticalHuggingPriority="750" id="t6N-51-VZS">
                                                         <rect key="frame" x="190" y="89" width="53" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0" id="pFe-z1-D2i">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -865,7 +843,6 @@
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Smk-Te-Uao">
                                                         <rect key="frame" x="16" y="89" width="170" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Current device signal level:" id="XRi-8Q-6yi">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -875,7 +852,6 @@
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="7VS-ED-HtG">
                                                         <rect key="frame" x="29" y="64" width="157" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Out of range signal level:" id="Izk-Ix-VgD">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -885,7 +861,6 @@
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="EoX-u9-X0u">
                                                         <rect key="frame" x="17" y="14" width="170" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Estimated device distance:" id="VWa-A1-WXJ">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -895,7 +870,6 @@
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="isQ-Ss-xtf">
                                                         <rect key="frame" x="190" y="14" width="53" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="1" id="z7q-gM-9kF">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -905,7 +879,6 @@
                                                     <textField verticalHuggingPriority="750" id="5go-qx-S5t">
                                                         <rect key="frame" x="247" y="89" width="28" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DB" id="pyc-dp-LAo">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -915,7 +888,6 @@
                                                     <textField verticalHuggingPriority="750" id="XLp-d0-SEa">
                                                         <rect key="frame" x="247" y="64" width="28" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DB" id="P2a-Je-rd1">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -925,7 +897,6 @@
                                                     <textField verticalHuggingPriority="750" id="sBO-wn-XH3">
                                                         <rect key="frame" x="247" y="14" width="54" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="meter(s)" id="7j5-bn-t83">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -935,7 +906,6 @@
                                                     <textField verticalHuggingPriority="750" id="DZK-mX-8Ei">
                                                         <rect key="frame" x="247" y="39" width="28" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <animations/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DB" id="ygG-Of-q2Y">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -943,16 +913,11 @@
                                                         </textFieldCell>
                                                     </textField>
                                                 </subviews>
-                                                <animations/>
                                             </view>
-                                            <animations/>
-                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </box>
                                         <slider verticalHuggingPriority="750" id="hJA-GX-3I5">
                                             <rect key="frame" x="240" y="45" width="220" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <sliderCell key="cell" state="on" alignment="left" minValue="5" maxValue="50" doubleValue="10" tickMarkPosition="above" numberOfTickMarks="10" allowsTickMarkValuesOnly="YES" sliderType="linear" id="HUA-B0-eSp"/>
                                             <connections>
                                                 <binding destination="OjQ-uP-NFb" name="value" keyPath="values.distanceRange" id="8DD-rU-TSI"/>
@@ -961,7 +926,6 @@
                                         <textField verticalHuggingPriority="750" id="JMs-Jd-NNG">
                                             <rect key="frame" x="195" y="47" width="42" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="closer" id="k0u-CQ-nk3">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -971,7 +935,6 @@
                                         <textField verticalHuggingPriority="750" id="tb6-1c-gVt">
                                             <rect key="frame" x="463" y="47" width="47" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="farther" id="IIx-Kc-l3Q">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -981,7 +944,6 @@
                                         <slider verticalHuggingPriority="750" id="1wW-o9-hL8">
                                             <rect key="frame" x="239" y="13" width="220" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <sliderCell key="cell" alignment="left" maxValue="0.90000000000000002" doubleValue="0.20000000000000001" tickMarkPosition="above" numberOfTickMarks="10" allowsTickMarkValuesOnly="YES" sliderType="linear" id="4Kh-Wv-Ve8"/>
                                             <connections>
                                                 <action selector="saveReactionSpeed:" target="494" id="Mpc-rZ-HAc"/>
@@ -991,7 +953,6 @@
                                         <textField verticalHuggingPriority="750" id="KY5-eg-09k">
                                             <rect key="frame" x="87" y="15" width="104" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Reaction speed:" id="SFI-ab-xvQ">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1001,7 +962,6 @@
                                         <textField verticalHuggingPriority="750" id="43u-Ze-F5O">
                                             <rect key="frame" x="195" y="15" width="41" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="faster" id="Gun-DN-Cwc">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1011,7 +971,6 @@
                                         <textField verticalHuggingPriority="750" id="1p2-p3-kjY">
                                             <rect key="frame" x="463" y="15" width="45" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="slower" id="gxv-21-U2E">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1021,7 +980,6 @@
                                         <textField verticalHuggingPriority="750" id="LdL-y0-4Il">
                                             <rect key="frame" x="97" y="47" width="94" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lock distance:" id="Rvh-WG-ux3">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1029,7 +987,6 @@
                                             </textFieldCell>
                                         </textField>
                                     </subviews>
-                                    <animations/>
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="Options" identifier="" id="H1f-c1-dqr">
@@ -1040,7 +997,6 @@
                                         <tabView id="T6P-85-VMo">
                                             <rect key="frame" x="10" y="7" width="576" height="211"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <font key="font" metaFont="system"/>
                                             <tabViewItems>
                                                 <tabViewItem label="Lock Screen" identifier="" id="FpO-eS-WrN">
@@ -1051,7 +1007,6 @@
                                                             <textField verticalHuggingPriority="750" id="FrZ-71-G2i">
                                                                 <rect key="frame" x="15" y="144" width="134" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lock screen method:" id="ZDJ-d6-OG6">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1061,7 +1016,6 @@
                                                             <popUpButton verticalHuggingPriority="750" id="TLH-J0-s2X">
                                                                 <rect key="frame" x="153" y="138" width="297" height="26"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <popUpButtonCell key="cell" type="push" title="Use handyLock custom lock screen" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="GL9-6s-z8w" id="KZG-NH-RLc">
                                                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="menu"/>
@@ -1085,7 +1039,6 @@
                                                             <button id="GgS-Ie-UpN">
                                                                 <rect key="frame" x="15" y="63" width="248" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="check" title="Use custom lock screen background" bezelStyle="regularSquare" imagePosition="left" inset="2" id="1gd-V5-4Jc">
                                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1102,7 +1055,6 @@
                                                             <button verticalHuggingPriority="750" id="vXx-iq-isg">
                                                                 <rect key="frame" x="313" y="54" width="140" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Set Background" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zMj-wP-kPH">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1124,7 +1076,6 @@
                                                             <textField verticalHuggingPriority="750" id="0R2-PU-0Bs">
                                                                 <rect key="frame" x="15" y="89" width="200" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Display Sleep delay:" id="ODW-ed-xyV">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1134,7 +1085,6 @@
                                                             <textField toolTip="Valid value from 0 (right away) to 180 minutes (3 hours)" verticalHuggingPriority="750" id="w12-eM-Nar" customClass="NumberField">
                                                                 <rect key="frame" x="151" y="87" width="46" height="22"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="5" drawsBackground="YES" id="ky9-aH-TK1">
                                                                     <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="xId-6c-qk1"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1148,7 +1098,6 @@
                                                             <textField verticalHuggingPriority="750" id="jJc-zm-e85">
                                                                 <rect key="frame" x="15" y="117" width="294" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Delay before locking screen when out of range:" id="hcc-sa-BUC">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1158,7 +1107,6 @@
                                                             <textField verticalHuggingPriority="750" id="bjd-mk-5P9">
                                                                 <rect key="frame" x="203" y="89" width="177" height="19"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="minutes" id="5Ot-LF-IVa">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1168,7 +1116,6 @@
                                                             <textField toolTip="Valid value from 0 to 180 seconds" verticalHuggingPriority="750" id="gcI-ut-7mb" customClass="NumberField">
                                                                 <rect key="frame" x="311" y="114" width="46" height="22"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="10" drawsBackground="YES" id="GVC-fm-nCH">
                                                                     <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="B13-eV-gaU"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1182,7 +1129,6 @@
                                                             <textField verticalHuggingPriority="750" id="85t-NP-oDX">
                                                                 <rect key="frame" x="363" y="117" width="57" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="seconds" id="hRV-W6-ZO7">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1190,7 +1136,6 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                         </subviews>
-                                                        <animations/>
                                                     </view>
                                                 </tabViewItem>
                                                 <tabViewItem label="Startup" identifier="" id="coU-YU-hCM">
@@ -1201,7 +1146,6 @@
                                                             <button id="6TH-eE-E3S">
                                                                 <rect key="frame" x="15" y="146" width="104" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="check" title="Start at login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="rwX-c0-JU9">
                                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1214,7 +1158,6 @@
                                                             <button id="pif-kz-4BD">
                                                                 <rect key="frame" x="15" y="124" width="207" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="check" title="Check for updates on startup" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gSX-C1-kDp">
                                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1224,7 +1167,6 @@
                                                                 </connections>
                                                             </button>
                                                         </subviews>
-                                                        <animations/>
                                                     </view>
                                                 </tabViewItem>
                                                 <tabViewItem label="Bluetooth" identifier="" id="03d-xY-KBc">
@@ -1235,7 +1177,6 @@
                                                             <textField verticalHuggingPriority="750" id="1dp-MC-dQp">
                                                                 <rect key="frame" x="15" y="142" width="164" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bluetooth Poll Frequency:" id="SAb-mS-n4r">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1245,7 +1186,6 @@
                                                             <textField toolTip="Valid value from 2 to 60 seconds" verticalHuggingPriority="750" id="4rp-KO-BQC" customClass="PollFrequencyNumber">
                                                                 <rect key="frame" x="185" y="140" width="46" height="22"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" toolTip="Valid value from 2 to 60 seconds" title="2" drawsBackground="YES" id="0U5-PG-y5m">
                                                                     <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="6bx-pP-x1a"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1259,7 +1199,6 @@
                                                             <textField verticalHuggingPriority="750" id="Te8-rA-oZF">
                                                                 <rect key="frame" x="237" y="142" width="57" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="seconds" id="eTi-ao-3Ks">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1269,7 +1208,6 @@
                                                             <button id="0nc-Rn-x5u">
                                                                 <rect key="frame" x="15" y="118" width="218" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="check" title="Log bluetooth signal level to file" bezelStyle="regularSquare" imagePosition="left" inset="2" id="KgQ-C9-Dbn">
                                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1279,7 +1217,6 @@
                                                                 </connections>
                                                             </button>
                                                         </subviews>
-                                                        <animations/>
                                                     </view>
                                                 </tabViewItem>
                                                 <tabViewItem label="Applications" identifier="" id="HCZ-5Q-a6y">
@@ -1290,7 +1227,6 @@
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="pYh-lD-NHW">
                                                                 <rect key="frame" x="15" y="143" width="86" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Out of range:" id="1p1-9E-cc5">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1300,7 +1236,6 @@
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="otG-td-9x3">
                                                                 <rect key="frame" x="43" y="108" width="59" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="In range:" id="1lC-kc-Zmj">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1310,7 +1245,6 @@
                                                             <button toolTip="Select application" verticalHuggingPriority="750" id="BhQ-DR-drs">
                                                                 <rect key="frame" x="286" y="134" width="79" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hS6-rw-ZOD">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1322,7 +1256,6 @@
                                                             <textField toolTip="Name of selected application to run when the BT device is going out of range" verticalHuggingPriority="750" id="3dO-cQ-vgq">
                                                                 <rect key="frame" x="104" y="140" width="180" height="22"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cg8-l9-4cB">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1335,7 +1268,6 @@
                                                             <button toolTip="Clear application selection" verticalHuggingPriority="750" id="ZbX-yb-Qrh">
                                                                 <rect key="frame" x="364" y="134" width="73" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Gpf-tv-QkR">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1347,7 +1279,6 @@
                                                             <button toolTip="Clear application selection" verticalHuggingPriority="750" id="cV9-FY-gaR">
                                                                 <rect key="frame" x="364" y="99" width="73" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Aa-cx-30x">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1359,7 +1290,6 @@
                                                             <button toolTip="Select application" verticalHuggingPriority="750" id="Tmb-tE-yLC">
                                                                 <rect key="frame" x="287" y="99" width="79" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b6T-ed-YgK">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1371,7 +1301,6 @@
                                                             <textField toolTip="Name of selected application to run when the BT device is going back in range" verticalHuggingPriority="750" id="9ex-AF-j4C">
                                                                 <rect key="frame" x="104" y="105" width="180" height="22"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="uhf-Yq-3ou">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1382,7 +1311,6 @@
                                                                 </connections>
                                                             </textField>
                                                         </subviews>
-                                                        <animations/>
                                                     </view>
                                                 </tabViewItem>
                                                 <tabViewItem label="Sounds" identifier="" id="6fN-PR-ogP">
@@ -1393,7 +1321,6 @@
                                                             <button id="TPz-GD-h4d">
                                                                 <rect key="frame" x="33" y="121" width="174" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="check" title="Use custom lock sounds" bezelStyle="regularSquare" imagePosition="left" inset="2" id="odO-Me-o1H">
                                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1406,7 +1333,6 @@
                                                             <button verticalHuggingPriority="750" id="Ne9-vG-yGL">
                                                                 <rect key="frame" x="313" y="111" width="139" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Set Lock Sound" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="irV-Tx-3u0">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1427,7 +1353,6 @@
                                                             <button id="IJ6-Av-28y">
                                                                 <rect key="frame" x="15" y="146" width="292" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="check" title="Play locking sound when going out of range" bezelStyle="regularSquare" imagePosition="left" inset="2" id="UW8-7m-ZZk">
                                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1439,7 +1364,6 @@
                                                             <button id="fJh-7v-vGF">
                                                                 <rect key="frame" x="15" y="95" width="283" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="check" title="Play locking sound when going in of range" bezelStyle="regularSquare" imagePosition="left" inset="2" id="1pp-sM-VAU">
                                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1451,7 +1375,6 @@
                                                             <button id="ZuM-xo-if2">
                                                                 <rect key="frame" x="33" y="68" width="183" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="check" title="Use custom unlock sound" bezelStyle="regularSquare" imagePosition="left" inset="2" id="mvq-4C-22Y">
                                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1464,7 +1387,6 @@
                                                             <button verticalHuggingPriority="750" id="gzw-fR-Wdb">
                                                                 <rect key="frame" x="301" y="59" width="152" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Set Unlock Sound" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kht-D1-Vrt">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1485,7 +1407,6 @@
                                                             <button verticalHuggingPriority="750" id="bvE-v4-PYZ">
                                                                 <rect key="frame" x="343" y="137" width="68" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="U5m-Yg-pKR">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1498,7 +1419,6 @@
                                                             <button verticalHuggingPriority="750" id="by4-lx-CSm">
                                                                 <rect key="frame" x="343" y="86" width="68" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <animations/>
                                                                 <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LZI-iM-lu8">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -1509,13 +1429,11 @@
                                                                 </connections>
                                                             </button>
                                                         </subviews>
-                                                        <animations/>
                                                     </view>
                                                 </tabViewItem>
                                             </tabViewItems>
                                         </tabView>
                                     </subviews>
-                                    <animations/>
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="About" identifier="" id="xR8-tz-FW0">
@@ -1526,13 +1444,11 @@
                                         <imageView id="4hF-0c-hzE">
                                             <rect key="frame" x="232" y="113" width="133" height="92"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="4BT-pR-CNW"/>
                                         </imageView>
                                         <textField verticalHuggingPriority="750" id="2HB-Az-xXb">
                                             <rect key="frame" x="209" y="89" width="179" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="handyLock" id="KMO-La-fIj">
                                                 <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1542,57 +1458,31 @@
                                         <textField verticalHuggingPriority="750" id="qry-D9-wVj">
                                             <rect key="frame" x="243" y="68" width="111" height="13"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="v1.0.8" id="vQQ-Ou-m23">
                                                 <font key="font" metaFont="system" size="10"/>
                                                 <color key="textColor" red="0.24456521740000001" green="0.24456521740000001" blue="0.24456521740000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" id="GTX-zl-8e5">
-                                            <rect key="frame" x="100" y="46" width="396" height="14"/>
+                                        <textField verticalHuggingPriority="750" misplaced="YES" id="GTX-zl-8e5">
+                                            <rect key="frame" x="100" y="32" width="396" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="Copyright © 2012-2014  Netputing Systems Inc." id="X1J-bd-4dQ">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" id="X1J-bd-4dQ">
                                                 <font key="font" metaFont="smallSystem"/>
+                                                <string key="title">Copyright © 2012-2014  Netputing Systems Inc.
+Updated by Josh Rogers</string>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <button id="vax-E1-jvy">
-                                            <rect key="frame" x="239" y="17" width="119" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <animations/>
-                                            <buttonCell key="cell" type="square" title="www.netputing.com" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z1H-2S-g7W">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system" size="10"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <action selector="openWebSite:" target="494" id="ctZ-Bm-fOO"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
-                                    <animations/>
                                 </view>
                             </tabViewItem>
                         </tabViewItems>
                     </tabView>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="wXE-QI-io1">
-                        <rect key="frame" x="599" y="17" width="25" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wyd-MI-qTf">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="getHelp:" target="494" id="hLA-8Y-EeA"/>
-                        </connections>
-                    </button>
                     <button id="wGB-yW-Tv3">
                         <rect key="frame" x="18" y="22" width="136" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <buttonCell key="cell" type="check" title="Enable handyLock" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wE4-B1-nBz">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -1601,32 +1491,7 @@
                             <action selector="handleEnaDisableHandyLock:" target="494" id="Lxk-hO-bID"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" id="DGs-VA-DbR">
-                        <rect key="frame" x="447" y="13" width="148" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Check for Updates" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ptI-tM-jrq">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="checkForUpdates:" target="494" id="6Ta-7o-kq6"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" id="0Va-D3-hx3">
-                        <rect key="frame" x="279" y="13" width="85" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Donate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lqy-an-BQh">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="donate:" target="494" id="1lQ-cZ-aVh"/>
-                        </connections>
-                    </button>
                 </subviews>
-                <animations/>
             </view>
             <point key="canvasLocation" x="418" y="323"/>
         </window>
@@ -1643,7 +1508,6 @@
                     <secureTextField verticalHuggingPriority="750" id="0r2-Mf-DpU">
                         <rect key="frame" x="130" y="83" width="138" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="po3-tB-mGj">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1656,7 +1520,6 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="F8n-3e-74s">
                         <rect key="frame" x="19" y="85" width="105" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Enter password:" id="TaA-Pk-hHw">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1666,7 +1529,6 @@
                     <secureTextField verticalHuggingPriority="750" id="Z5c-sf-Jql">
                         <rect key="frame" x="130" y="55" width="138" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="Hml-B3-c0i">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1679,7 +1541,6 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="UJR-eu-vdc">
                         <rect key="frame" x="18" y="57" width="106" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Verify password:" id="buz-oV-3D1">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1689,7 +1550,6 @@
                     <button verticalHuggingPriority="750" id="aOn-IR-MO6">
                         <rect key="frame" x="14" y="13" width="126" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <buttonCell key="cell" type="push" title="Set Password" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Eph-va-EcV">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -1701,7 +1561,6 @@
                     <button verticalHuggingPriority="750" id="v8F-Sy-AC9">
                         <rect key="frame" x="191" y="13" width="83" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JcI-RC-nQI">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -1714,7 +1573,6 @@ Gw
                         </connections>
                     </button>
                 </subviews>
-                <animations/>
             </view>
             <point key="canvasLocation" x="428" y="-204.5"/>
         </window>

@@ -18,6 +18,7 @@ DerivedData/
 xcuserdata/
 
 ## Other
+handyLock.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
 *.moved-aside
 *.xcuserstate
 

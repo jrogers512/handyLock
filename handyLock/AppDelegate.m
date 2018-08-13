@@ -775,6 +775,7 @@ static bool screenIsLockedByOSX = false;
         
         // Check for updates on startup
         [ checkUpdatesOnStartup setState:[defaults boolForKey:@"updating"] ? NSOnState : NSOffState];
+/*  disabled by jrogers512 due to url no longer working (and crashing app) - 20180813
         if( [ checkUpdatesOnStartup state ] ) {
             if( [self newVersionAvailable] )
             {
@@ -785,7 +786,7 @@ static bool screenIsLockedByOSX = false;
                 }
             }
         }
-        
+*/
         // Locking enabled
         [ lockingEnabled setState:[defaults boolForKey:@"enabled"] ? NSOnState : NSOffState];
         [self setDisplayTextColor];
